@@ -9,12 +9,11 @@
 <body>
 
  <div data-role="page" id="itineraire">
-	
 	<div data-role="header"> 
 		<h1>Ajout d'itinéraire</h1> 
 	</div> 
-	
 	<div data-role="fieldcontain">
+	  <form id="target" action="destination.html">
 		<fieldset data-role="controlgroup">
 			   <h2>1) Trajet</h2>
 						<h3>a) Départ :</h3>
@@ -92,7 +91,13 @@
 								<!-- Animaux -->
 								<label for="checkbox-animal">Présence d'animaux</label>
 								<input type="checkbox" name="checkbox-animal" id="checkbox-animal" class="custom" />
+						<br/>
+						<br/>
+						<input type="submit" value="Valider" data-inline="true" data-theme="e" />
 		</fieldset>
+	  </form>
+		
+		
 		<div data-role="footer"> 
 			<a onclick="/*deconnexion()*/">Deconnexion</a>
 		</div>
