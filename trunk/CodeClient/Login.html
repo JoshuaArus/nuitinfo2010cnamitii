@@ -16,10 +16,10 @@
 
 	<div data-role="content">
 		<div data-role="fieldcontain">
-    		<label for="name">Compte:</label>
-    		<input type="text" name="name" id="name" value=""  />
-    		<label for="password">Mot de passe:</label>
-    		<input type="password" name="password" id="password" value="" />	
+    		<label for="mail">Adresse mail:</label>
+    		<input type="text" name="mail" id="mail" value=""  />
+    		<label for="mdp">Mot de passe:</label>
+    		<input type="password" name="mdp" id="mdp" value="" />	
 			<input type="button" id="envoi" data-role="button" value="Connexion" />
 		</div>
 		<div id="resultLog"></div>
@@ -34,15 +34,15 @@
         $(function() {
  
             $("#envoi").click(function() {
-                var theName = $.trim($("#name").val());
-				var pass = $.trim($("#password").val());
+                var mail = $.trim($("#mail").val());
+				var mdp = $.trim($("#mdp").val());
  
-                if(theName.length > 0)
+                if(mail.length > 0)
                 {
                     $.ajax({
                       type: "POST",
                       url: "ajax.php",
-                      data: "login="+theName+"&passwd="+pass,
+                      data: "mail="+mail+"&mdp="+mdp,
                       cache: false,
                       dataType: "text",
                       success: onSuccess
@@ -56,8 +56,9 @@
  
             function onSuccess(data)
             {
-                //$("#resultLog").html("Result: " + data);
-				window.location = "Accueil.html";
+				if( data == "true"){
+					window.location = "Accueil.html";
+				}
             }
  
         });
