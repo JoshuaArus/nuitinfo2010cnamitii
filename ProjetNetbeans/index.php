@@ -13,7 +13,7 @@ define('INC',"1");
         <script  type="text/javascript" src="javascript/principal.js"></script>
         <title>Unitrack 2.0</title>
     </head>
-    <body onresize="windowresize()">
+    <body">
         <div id="Top">
             <div id="Banniere">
 
