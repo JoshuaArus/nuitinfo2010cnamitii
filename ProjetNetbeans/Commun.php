@@ -74,7 +74,7 @@
 */
 
 	$CFG = array(
-		'en_tete_erreurs'       => '<h3>Erreur Fatale :: Projet</h3>',
+		'en_tete_erreurs'       => '<h3>Erreur Fatale :: UniTrack 2.0</h3>',
 		'charset'               => 'utf-8',
 
 		// Divers
