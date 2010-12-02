@@ -32,8 +32,13 @@ if ( mobile_device_detect() )
                 <a id="menu" class="menuPosition1" href="?Page=Accueil">Accueil</a>
                 <a id="menu" class="menuPosition2" href="?Page=PropositionTrajet">Proposer trajet</a>
                 <a id="menu" class="menuPosition3" href="?Page=ChercherTrajet">Chercher trajet</a>
-                <a id="menu" class="menuPosition4" href="?Page=Compte">Compte</a>
-                <a id="menu" class="menuPosition5" href="?Page=deconnexion">Déconnexion</a>
+                <a id="menu" class="menuPosition4" href="?Page=Profil">Compte</a>
+                <?php
+                if(isset($_SESSION['mail']))
+                {
+                echo '<a id="menu" class="menuPosition5" href="deconnexion.php>Déconnexion</a>';
+                }
+                ?>
             </div>
         </div>
         
@@ -42,7 +47,7 @@ if ( mobile_device_detect() )
             if(!isset($_SESSION['mail']))
             {
                 echo('<div id="Connexion">
-                <form method="POST" action="?Page=connexion">
+                <form method="POST" action="connexion.php">
                     <input name="login" type="text" maxlength="40">
                     <input name="password" type="password" maxlength="20">
                     <input name="bouton" type="submit" value="Connexion">
