@@ -29,10 +29,10 @@ define('INC',"1");
         
         <div id="Center">
             <div id="Connexion">
-                <form method="POST" action="?Page=connexion.php">
+                <form method="POST" action="?Page=connexion">
                     <input name="login" type="text" maxlength="40">
                     <input name="password" type="password" maxlength="20">
-                    <input name="bouton" type="button" value="Connexion">
+                    <input name="bouton" type="submit" value="Connexion">
                 </form>
             </div>
 
