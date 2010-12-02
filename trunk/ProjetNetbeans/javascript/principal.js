@@ -1,17 +1,4 @@
-
-function getBrowserWidth()
-{
-    if ( window.innerWidth )
-  return window.innerWidth;
-
-  else if ( document.documentElement && document.documentElement.clientWidth != 0 )
-  return document.documentElement.clientWidth;
-
-  else if ( document.body )
-  return document.body.clientWidth;
-
-return 0;
-}
+onresize="windowresize()";
 
 if ( getBrowserWidth() >= 750 )
 {
@@ -31,6 +18,19 @@ else
   var browser=0;
 }
 
+function getBrowserWidth()
+{
+    if ( window.innerWidth )
+  return window.innerWidth;
+
+  else if ( document.documentElement && document.documentElement.clientWidth != 0 )
+  return document.documentElement.clientWidth;
+
+  else if ( document.body )
+  return document.body.clientWidth;
+
+return 0;
+}
 
 function windowresize()
 {
@@ -49,10 +49,4 @@ function windowresize()
        location.href = location.pathname;
     }
   }
-}
-
-// Au chargement de la page
-
-function load()
-{
 }

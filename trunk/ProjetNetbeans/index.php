@@ -1,7 +1,7 @@
 <?php
 
 define('INC',"racine");
-require_once("Commun.php");
+//require_once("Commun.php");
 
 ?>
 
@@ -11,7 +11,7 @@ require_once("Commun.php");
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <script  type="text/javascript" src="javascript/principal.js"></script>
-        <title>Univoiture</title>
+        <title>Unitrack 2.0</title>
     </head>
     <body onresize="windowresize();">
         <div id="Top">
