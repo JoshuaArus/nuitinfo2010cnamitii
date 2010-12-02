@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_trajet` (
   `n_adresseDepart` bigint(20) NOT NULL,
   `n_adresseArrive` bigint(20) NOT NULL,
   `nbPlaceDisponible` int(11) NOT NULL,
-  `allerRetour` tinyint(1) NOT NULL,
+  `allerRetour` tinyint(1) NULL,
   `n_dateArrive` bigint(20) NOT NULL,
   `n_dateDepart` bigint(20) NOT NULL,
   `n_statutTrajet` bigint(20) NOT NULL,

@@ -22,7 +22,7 @@
 CREATE TABLE IF NOT EXISTS `nuitInfo_date` (
   `n_date` bigint(20) NOT NULL,
   `dateDepart` datetime NOT NULL,
-  `dateArrive` datetime NOT NULL,
+  `dateArrive` datetime NULL,
   PRIMARY KEY (`n_date`)
 ) ENGINE=InnoDB CHARSET=utf8;
 

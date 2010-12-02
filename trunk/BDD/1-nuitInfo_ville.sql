@@ -22,7 +22,7 @@
 CREATE TABLE IF NOT EXISTS `nuitInfo_ville` (
   `n_ville` bigint(20) NOT NULL,
   `nomVille` varchar(40) NOT NULL,
-  `code` int(11) NOT NULL,
+  `code` int(11) NULL,
   PRIMARY KEY (`n_ville`)
 ) ENGINE=InnoDB CHARSET=utf8;
 

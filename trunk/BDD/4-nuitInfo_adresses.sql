@@ -21,8 +21,8 @@
 
 CREATE TABLE IF NOT EXISTS `nuitInfo_adresses` (
   `n_adresse` bigint(20) NOT NULL,
-  `numero` int(11) NOT NULL,
-  `rue` varchar(80) NOT NULL,
+  `numero` int(11) NULL,
+  `rue` varchar(80) NULL,
   `n_ville` bigint(20) NOT NULL,
   PRIMARY KEY  (`n_adresse`)
 ) ENGINE=InnoDB CHARSET=utf8;
