@@ -3,7 +3,7 @@
 require_once('Fonctions/checker.php');
 
 if (!verif(array('login','password'))) {
-	redirection('erreur.htm');
+	redirection('Pages/erreur.htm');
 }
 else
 {
@@ -19,12 +19,12 @@ else
 	if(!reponse($rep))//si il est pas authentifié
 	{
 		detruireSession();
-		redirection('erreur.htm');
+		redirection('Pages/erreur.htm');
 	}
 	else //si il est authentifié
 	{
 		$T = lireProfil($mail, 'nuitinfo_utilisateur', $conn);
-		if(count($T)==0) redirection('erreur.htm');
+		if(count($T)==0) redirection('Pages/erreur.htm');
 		$_SESSION['mail'] = $mail;
 		creerCookie('cookie_pseudo', $T['mail']);
 		$T['sessid'] = nouveauTicket();
