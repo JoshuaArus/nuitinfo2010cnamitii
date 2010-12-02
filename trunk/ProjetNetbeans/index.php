@@ -1,6 +1,6 @@
 <?php
 
-//require_once("Fonctions/Commun.php");
+require_once("Commun.php");
 
 ?>
 
@@ -8,11 +8,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        
+        <script  type="text/javascript" src="javascript/principal.js"></script>
+        <title>Univoiture</title>
     </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
+    <body onresize="windowresize();">
+        <div name="Top">
+
+        </div>
+        
+        <div name="Center">
+
+        </div>
+
+        <div name="Bottom">
+
+        </div>
     </body>
 </html>
