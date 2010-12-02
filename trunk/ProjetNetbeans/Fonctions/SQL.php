@@ -10,7 +10,7 @@ function connect()
 	}
 	else
 	{
-		$temp = mysql_select_db('revaltic',$conn);
+		$temp = mysql_select_db('ortsfran',$conn);
 		if ($temp == false)
 		{
 			close($conn);
