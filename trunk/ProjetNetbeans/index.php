@@ -14,15 +14,15 @@ require_once("Commun.php");
         <title>Univoiture</title>
     </head>
     <body onresize="windowresize();">
-        <div name="Top">
+        <div id="Top">
 
         </div>
         
-        <div name="Center">
+        <div id="Center">
 
         </div>
 
-        <div name="Bottom">
+        <div id="Bottom">
 
         </div>
     </body>
