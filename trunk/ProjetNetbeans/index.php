@@ -15,10 +15,31 @@ define('INC',"1");
     </head>
     <body>
         <div id="Top">
+            <div id="Banniere">
 
+            </div>
+            <div id="Menu">
+                <a id="menu" class="menuPosition1" href="?Page=Accueil">Accueil</a>
+                <a id="menu" class="menuPosition2" href="?Page=PropositionTrajet">Proposer trajet</a>
+                <a id="menu" class="menuPosition3" href="?Page=ChercherTrajet">Chercher trajet</a>
+                <a id="menu" class="menuPosition4" href="?Page=Compte">Compte</a>
+                <a id="menu" class="menuPosition5" href="?Page=deconnexion.php">Compte</a>
+            </div>
         </div>
         
         <div id="Center">
+            <div id="Connexion">
+                <form method="POST" action="?Page=connexion.php">
+                    <input name="login" type="text" maxlength="40">
+                    <input name="password" type="password" maxlength="20">
+                    <input name="bouton" type="button" value="Connexion">
+                </form>
+            </div>
+
+            <div id="Statistique">
+                Impact eco
+            </div>
+
             <div id="Contenu">
                 <?php
                 //html entities de get
@@ -43,7 +64,13 @@ define('INC',"1");
         </div>
 
         <div id="Bottom">
+            <div id="Footer">
 
+            </div>
+            <div id="Copyright">
+                Creative Common BY SA 
+                <a href="?Page=Légal">Légal</a>
+            </div>
         </div>
     </body>
 </html>
