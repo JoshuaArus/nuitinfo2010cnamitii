@@ -13,7 +13,7 @@ define('INC',"1");
         <script  type="text/javascript" src="javascript/principal.js"></script>
         <title>Unitrack 2.0</title>
     </head>
-    <body>
+    <body onresize="windowresize()">
         <div id="Top">
             <div id="Banniere">
 
@@ -23,7 +23,7 @@ define('INC',"1");
                 <a id="menu" class="menuPosition2" href="?Page=PropositionTrajet">Proposer trajet</a>
                 <a id="menu" class="menuPosition3" href="?Page=ChercherTrajet">Chercher trajet</a>
                 <a id="menu" class="menuPosition4" href="?Page=Compte">Compte</a>
-                <a id="menu" class="menuPosition5" href="?Page=deconnexion.php">Compte</a>
+                <a id="menu" class="menuPosition5" href="?Page=deconnexion">Déconnexion</a>
             </div>
         </div>
         
