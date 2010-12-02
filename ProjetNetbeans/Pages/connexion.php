@@ -4,13 +4,13 @@ define('INC', 1);
 require('commun.php');
 require('checker.php');
 
-if (!verif(array('conn1','conn2'))) {
+if (!verif(array('login','password'))) {
 	afficherPage('erreur.htm', $T);
 }
 else
 {
-	$mail = $_POST['conn1'];
-	$mdp = $_POST['conn2'];
+	$mail = $_POST['login'];
+	$mdp = $_POST['password'];
 
 	$mail = strtolower($mail);
 	crypterMdp($mdp);
@@ -28,10 +28,8 @@ else
 		$T = lireProfil($mail, $type, $conn);
 		if(count($T)==0) afficherPage('erreur.htm');
 		$_SESSION['mail'] = $mail;
-		creerCookie('cookie_pseudo', $T['mail']);
 		$T['sessid'] = nouveauTicket();
 		creerCookie('cookie_sessid', $T['sessid']);
-		majProfil($T,'utilisateurs',$conn);
 		redirection('index.php');
 	}
 }
