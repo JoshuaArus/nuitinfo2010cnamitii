@@ -1,8 +1,7 @@
 <?php ;
 
 define('INC', 1);
-require('commun.php');
-require('checker.php');
+require_once('Fonctions/checker.php');
 
 if (!verif(array('login','password'))) {
 	afficherPage('erreur.htm', $T);
@@ -28,6 +27,7 @@ else
 		$T = lireProfil($mail, $type, $conn);
 		if(count($T)==0) afficherPage('erreur.htm');
 		$_SESSION['mail'] = $mail;
+		creerCookie('cookie_pseudo', $T['mail']);
 		$T['sessid'] = nouveauTicket();
 		creerCookie('cookie_sessid', $T['sessid']);
 		redirection('index.php');
