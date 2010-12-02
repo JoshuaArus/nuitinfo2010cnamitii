@@ -22,12 +22,10 @@
     		<input type="password" name="mdp" id="mdp" value="" />	
 			<input type="button" id="envoi" data-role="button" value="Connexion" />
 		</div>
+			<span id="error" style="color:red"/>
 		<div id="resultLog"></div>
 	</div><!-- /content -->
-
-	<div data-role="footer">
-		<a onclick="/*deconnexion()*/">Deconnexion</a>
-	</div><!-- /header -->
+<!-- /header -->
 	
 </div><!-- /page -->
 <script type="text/javascript">
@@ -55,9 +53,11 @@
             });
  
             function onSuccess(data)
-            {
+            {    
 				if( data == "true"){
 					window.location = "Accueil.html";
+				} else {
+					$("#error").html("Mail ou mot de passe erroné");
 				}
             }
  

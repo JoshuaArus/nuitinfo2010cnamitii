@@ -13,7 +13,7 @@
 		<h1>Ajout d'itinéraire</h1> 
 	</div> 
 	<div data-role="fieldcontain">
-	  <form id="target" action="destination.html">
+
 		<fieldset data-role="controlgroup">
 			   <h2>1) Trajet</h2>
 						<h3>a) Départ :</h3>
@@ -93,15 +93,58 @@
 								<input type="checkbox" name="checkbox-animal" id="checkbox-animal" class="custom" />
 						<br/>
 						<br/>
-						<input type="submit" value="Valider" data-inline="true" data-theme="e" />
+						<input type="button" value="Valider" data-inline="true" data-theme="e" />
 		</fieldset>
-	  </form>
+
 		
 		
 		<div data-role="footer"> 
-			<a onclick="/*deconnexion()*/">Deconnexion</a>
+			<a onclick="deconnexion()">Deconnexion</a>
 		</div>
 	</div>
  </div>
+<script type="text/javascript">
+	function deconnexion(){    
+		alert();
+		window.location = "../Login.html";				
+	}
+</script>
+
+<script type="text/javascript">
+        $(function() {
+ 
+            $("#Valider").click(function() {
+                var txtdepartville = $.trim($("#txtdepartville").val());
+				var txtarriveeville = $.trim($("#txtarriveeville").val());
+ 
+                if(txtdepartville.length > 0)
+                {
+                    $.ajax({
+                      type: "POST",
+                      url: "ajaxEnvoiTrajet.php",
+                      data: "txtdepartville="+txtdepartville+"&txtarriveeville="+txtarriveeville,
+                      cache: false,
+                      dataType: "text",
+                      success: onSuccess
+                    });
+                }
+            });
+ 
+			  $("#resultLog").ajaxError(function(event, request, settings, exception) {
+              $("#resultLog").html("Error Calling: " + settings.url + "<br />HTPP Code: " + request.status);
+            });
+ 
+            function onSuccess(data)
+            {    
+				if( data == "true"){
+					$("#error").html("Envoi Ok");
+				} else {
+					$("#error").html("Echec envoi");
+				}
+            }
+ 
+        });
+    </script>
+
 </body>
 </html>
