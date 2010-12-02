@@ -1,6 +1,5 @@
 <?php ;
 
-define('INC', 1);
 require_once('Fonctions/checker.php');
 
 if (!verif(array('login','password'))) {
@@ -14,7 +13,7 @@ else
 	$mail = strtolower($mail);
 	crypterMdp($mdp);
 
-        $req = 'select * from ' . $type . ' where mail=\''.$mail.'\' AND mdp=\''.$mdp.'\'';
+        $req = 'select * from nuitinfo_utilisateur where mail=\''.$mail.'\' AND mdp=\''.$mdp.'\'';
         $rep = req($req,$conn);
 
 	if(!reponse($rep))//si il est pas authentifié
@@ -24,13 +23,13 @@ else
 	}
 	else //si il est authentifié
 	{
-		$T = lireProfil($mail, $type, $conn);
+		$T = lireProfil($mail, 'nuitinfo_utilisateur', $conn);
 		if(count($T)==0) redirection('erreur.htm');
 		$_SESSION['mail'] = $mail;
 		creerCookie('cookie_pseudo', $T['mail']);
 		$T['sessid'] = nouveauTicket();
 		creerCookie('cookie_sessid', $T['sessid']);
-		redirection('index.php');
+		redirection('index.php?Page=ok');
 	}
 }
 

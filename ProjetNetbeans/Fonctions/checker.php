@@ -53,7 +53,7 @@
 	}
 
 	$conn = connect();
-	$T = lireProfil($_SESSION['mail'], 'utilisateurs', $conn);
+	$T = lireProfil($_SESSION['mail'], 'nuitinfo_utilisateur', $conn);
 	$C = count($T)!==0;
 
 
@@ -68,7 +68,7 @@
 	if($C) {
 
 		// Cookies erronés
-		if(lireCookie('cookie_pseudo')!=T('mail') || lireCookie('cookie_sessid')!=T('sessid')) {
+		if(lireCookie('cookie_pseudo')!=$T['mail'] || lireCookie('cookie_sessid')!=$T['sessid']) {
 			detruireSession();
 			redirection('erreur.htm');
 		}

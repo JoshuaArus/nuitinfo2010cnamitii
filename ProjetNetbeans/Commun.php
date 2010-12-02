@@ -82,6 +82,7 @@
 		'clef_cryptage0'        => 'abcd',
 		'clef_cryptage1'        => '1234',
 		'clef_ticket'           => 'smqlksdq98798798',
+                'cookie_pseudo'         => 'pseudo',
 		'cookie_sessid'         => 'sessid',        // Nom du cookie contenant la variable session à comparer avec celle du compte
 		'nom_session'           => 'sessionName', // Nom du cookie session
 		'path_cookie'           => '/',                    // Validité des cookie à partir de ce répertoire
