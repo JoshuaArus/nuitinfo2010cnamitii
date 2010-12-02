@@ -7,7 +7,7 @@
 -- Version du serveur: 5.1.32
 -- Version de PHP: 5.2.9
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
 
 --
 -- Base de données: `ortsfran`
