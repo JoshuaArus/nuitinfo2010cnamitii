@@ -16,7 +16,7 @@
 
 	<div data-role="content">	
 	<ul data-role="listview" data-theme="g">
-		<li><a href="itineraire.php">Créer un itinéraire</a></li>
+		<li><a href="itineraire.html">Créer un itinéraire</a></li>
 		<li><a href="chercher.php">Je cherche</a></li>
 		<li><a href="profil.php">Mes trajets</a></li>
 		<li><a href="urgence.php">Urgence</a></li>
@@ -24,10 +24,15 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<a onclick="/*deconnexion()*/">Deconnexion</a>
+		<a onclick="deconnexion()">Deconnexion</a>
 	</div><!-- /header -->
 	
 </div><!-- /page -->
-
+<script type="text/javascript">
+	function deconnexion()
+	{    
+		window.location = "Login.html";				
+	}
+</script>
 </body>
 </html>
