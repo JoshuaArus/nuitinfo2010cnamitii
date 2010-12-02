@@ -1,4 +1,4 @@
-onresize="windowresize()";
+window.onresize="windowresize";
 
 if ( getBrowserWidth() >= 750 )
 {
@@ -34,6 +34,8 @@ return 0;
 
 function windowresize()
 {
+  alert("resize");
+
   if ( browser==1 )
   {
     if ( getBrowserWidth() < 750 )
@@ -50,3 +52,4 @@ function windowresize()
     }
   }
 }
+

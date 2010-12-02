@@ -1,6 +1,6 @@
 <?php
 
-define('INC',"racine");
+define('INC',"1");
 //require_once("Commun.php");
 
 ?>
@@ -13,13 +13,33 @@ define('INC',"racine");
         <script  type="text/javascript" src="javascript/principal.js"></script>
         <title>Unitrack 2.0</title>
     </head>
-    <body onresize="windowresize();">
+    <body>
         <div id="Top">
 
         </div>
         
         <div id="Center">
+            <div id="Contenu">
+                <?php
+                //html entities de get
 
+                if ( isset($_GET["Page"]) )
+                {
+                    if ( is_file("Pages/" . $_GET["Page"] . ".php") )
+                    {
+                        require_once("Pages/" . $_GET["Page"] . ".php");
+                    }
+                    else
+                    {
+                        require_once("Pages/404.php");
+                    }
+                }
+                else
+                {
+                        require_once("Pages/Accueil.php");
+                }
+                ?>
+            </div>
         </div>
 
         <div id="Bottom">
