@@ -36,7 +36,7 @@ if ( mobile_device_detect() )
                 <?php
                 if(isset($_SESSION['mail']))
                 {
-                echo '<a id="menu" class="menuPosition5" href="deconnexion.php>Déconnexion</a>';
+                echo '<a id="menu" class="menuPosition5" href="deconnexion.php">Déconnexion</a>';
                 }
                 ?>
             </div>
