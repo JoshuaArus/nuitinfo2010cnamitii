@@ -41,7 +41,7 @@
 
 */
 
-	set_include_path($dir_a_decaler.'./fonctions/'.
+	set_include_path($dir_a_decaler.'./Fonctions/'.
 	                 PATH_SEPARATOR .
 	                 '.');
 
@@ -53,18 +53,18 @@
 
 */
 
-	require('afficherPage.php');
+	//require('afficherPage.php');
 	require('err.php');
 	require('detruireSession.php');
 	require('SQL.php');
 	require('crypterMdp.php');
 	require('verif.php');
-	require('redirection.php');
+	//require('redirection.php');
 	require('creerCookie.php');
 	require('lireCookie.php');
-	require('nouveauTicket.php');
-	require('T.php');
-	require('synchroProfil.php');
+	//require('nouveauTicket.php');
+	//require('T.php');
+	//require('synchroProfil.php');
 
 
 /*
