@@ -1,5 +1,5 @@
 window.onresize="windowresize";
-
+onresize="windowresize";
 if ( getBrowserWidth() >= 750 )
 {
   if ( ( navigator.appName ).toLowerCase() == 'microsoft internet explorer')
