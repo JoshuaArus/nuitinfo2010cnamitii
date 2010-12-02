@@ -74,11 +74,10 @@
 */
 
 	$CFG = array(
-		'en_tete_erreurs'       => '<h3>Erreur Fatale :: Revaltic 2.0</h3>',
+		'en_tete_erreurs'       => '<h3>Erreur Fatale :: Projet</h3>',
 		'charset'               => 'utf-8',
 
 		// Divers
-		'temps_maj'             => 60*5,            // On vérifie toutes les 5 minutes si le joueur est toujours connecté
 		'debug'                 => true,            // Erreurs affichées à l'écran (=true) ou dans le fichier d'erreurs (=false)
 		'max_caracteres'        => 50,              // Le max de caractères autorisé dans les noms de fichiers
 
@@ -86,10 +85,8 @@
 		'clef_cryptage0'        => 'abcd',
 		'clef_cryptage1'        => '1234',
 		'clef_ticket'           => 'smqlksdq98798798',
-		'cookie_pseudo'         => 'lkjlkjd98',            // Nom du cookie contenant le pseudo
-		'cookie_sessid'         => 'jmjml0IDLMJLM',        // Nom du cookie contenant la variable session à comparer avec celle du compte
-		'nom_session'           => 'qqsmlksdmfkmlsdk9874', // Nom du cookie session
-		'duree_cookie'          => 3600*24*15,             // Le cookie est valable 15 jours
+		'cookie_sessid'         => 'sessid',        // Nom du cookie contenant la variable session à comparer avec celle du compte
+		'nom_session'           => 'sessionName', // Nom du cookie session
 		'path_cookie'           => '/',                    // Validité des cookie à partir de ce répertoire
 
 		// Le fichier où les erreurs du site sont enregistrées
