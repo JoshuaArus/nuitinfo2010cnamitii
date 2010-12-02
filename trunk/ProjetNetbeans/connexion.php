@@ -15,7 +15,7 @@ else
 	$mail = strtolower($mail);
 	crypterMdp($mdp);
 
-        $req = 'select * from nuitinfo_utilisateur where mail=\''.$mail.'\' AND mdp=\''.$mdp.'\'';
+        $req = 'select * from nuitInfo_utilisateur where mail=\''.$mail.'\' AND mdp=\''.$mdp.'\'';
         $rep = req($req,$conn);
 
 	if(!reponse($rep))//si il est pas authentifié
@@ -25,7 +25,7 @@ else
 	}
 	else //si il est authentifié
 	{
-		$T = lireProfil($mail, 'nuitinfo_utilisateur', $conn);
+		$T = lireProfil($mail, 'nuitInfo_utilisateur', $conn);
 		if(count($T)==0) redirection('Pages/erreur.htm');
 		$_SESSION['mail'] = $mail;
 		creerCookie('cookie_pseudo', $T['mail']);
