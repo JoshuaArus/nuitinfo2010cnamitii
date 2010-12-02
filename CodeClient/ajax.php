@@ -1,4 +1,3 @@
 <?php
-	
-	echo $_REQUEST['passwd'];
+	include("connexion.php");
 ?>
