@@ -78,3 +78,5 @@
 [02-Dec-2010 23:06:30] PHP Notice:  Undefined index: sessid in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\checker.php on line 70
 [02-Dec-2010 23:07:21] PHP Notice:  Undefined index: mail in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\index.php on line 42
 [02-Dec-2010 23:07:21] PHP Notice:  A session had already been started - ignoring session_start() in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\checker.php on line 40
+[02-Dec-2010 23:09:56] PHP Notice:  Constant INC already defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\deconnexion.php on line 3
+[02-Dec-2010 23:09:56] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42

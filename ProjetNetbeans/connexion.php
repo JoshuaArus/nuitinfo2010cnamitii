@@ -1,5 +1,6 @@
 <?php ;
 
+require_once('Commun.php');
 require_once('Fonctions/checker.php');
 
 if (!verif(array('login','password'))) {
