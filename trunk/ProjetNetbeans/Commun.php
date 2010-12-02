@@ -62,6 +62,7 @@
 	//require('redirection.php');
 	require('creerCookie.php');
 	require('lireCookie.php');
+        require('divers.php');
 	//require('nouveauTicket.php');
 	//require('T.php');
 	//require('synchroProfil.php');
