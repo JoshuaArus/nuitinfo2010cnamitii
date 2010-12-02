@@ -2,7 +2,7 @@
 
 function connect()
 {
-	$conn=mysql_connect('localhost','root','');
+	$conn=mysql_connect('127.0.0.1','root','');// 'sql9.60gp' pour serveur
 
 	if (!$conn)
 	{
@@ -42,9 +42,9 @@ function close($conn)
 	mysql_close($conn);
 }
 
-function lireProfil($mail, $mdp, $table,$conn)
+function lireProfil($mail, $table,$conn)
 {
-	$req = 'select * from '.$table.' where mail=\''.$mail.'\' and mdp = \''.$mdp.'\'';
+	$req = 'select * from '.$table.' where mail=\''.$mail.'\'';
 
 	$rep = req($req,$conn);
 	$w = reponse($rep);
