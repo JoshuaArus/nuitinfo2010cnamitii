@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_date` (
   `dateDepart` datetime NOT NULL,
   `dateArrive` datetime NOT NULL,
   PRIMARY KEY (`n_date`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitInfo_date`

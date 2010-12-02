@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_evaluation` (
   `n_asso_trajetUtilisateur` bigint(20) NOT NULL,
   `ponctualite` int(11) NOT NULL,
   PRIMARY KEY (`n_evaluation`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitInfo_evaluation`

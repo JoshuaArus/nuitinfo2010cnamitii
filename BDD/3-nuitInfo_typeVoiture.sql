@@ -21,11 +21,11 @@
 
 CREATE TABLE IF NOT EXISTS `nuitInfo_typeVoiture` (
   `n_categorieVoiture` bigint(20) NOT NULL,
-  `nomCategorie` varchar(50) DEFAULT NULL,
-  `carbone` int(10) DEFAULT NULL,
-  `nbPlace` tinyint(1) DEFAULT NULL,
+  `nomCategorie` varchar(50) NULL,
+  `carbone` int(10) NULL,
+  `nbPlace` tinyint(1) NULL,
   PRIMARY KEY (`n_categorieVoiture`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitInfo_typeVoiture`
