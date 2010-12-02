@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_trajet` (
   `n_dateDepart` bigint(20) NOT NULL,
   `n_statutTrajet` bigint(20) NOT NULL,
   PRIMARY KEY (`n_trajet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitInfo_trajet`

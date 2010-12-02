@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_ville` (
   `nomVille` varchar(40) NOT NULL,
   `code` int(11) NOT NULL,
   PRIMARY KEY (`n_ville`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitInfo_ville`
