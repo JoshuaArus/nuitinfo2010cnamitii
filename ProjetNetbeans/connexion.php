@@ -32,7 +32,7 @@ else
 		$T['sessid'] = nouveauTicket();
 		creerCookie('cookie_sessid', $T['sessid']);
 		majProfil($T,'utilisateurs',$conn);
-		redirection('index.php?page=co');
+		redirection('index.php');
 	}
 }
 
