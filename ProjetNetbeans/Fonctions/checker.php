@@ -49,7 +49,6 @@
 
 	if(!isset($_SESSION['mail'])) {
 		$_SESSION['mail'] = lireCookie('cookie_pseudo');
-		//echo $_SESSION['mail'];
 	}
 
 	$conn = connect();
@@ -70,7 +69,7 @@
 		// Cookies erronés
 		if(lireCookie('cookie_pseudo')!=$T['mail'] || lireCookie('cookie_sessid')!=$T['sessid']) {
 			detruireSession();
-			redirection('erreur.htm');
+			redirection('Pages/erreur.htm');
 		}
 	}
 

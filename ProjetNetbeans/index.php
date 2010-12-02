@@ -4,6 +4,10 @@ define('INC',"1");
 require_once("Fonctions/mobile_device_detect.php");
 require_once("Commun.php");
 
+session_name($CFG['nom_session']);
+session_start() || err('session');
+session_regenerate_id(true) || err('session');
+
 if ( mobile_device_detect() )
 {
     redirection("mobile");
@@ -34,14 +38,22 @@ if ( mobile_device_detect() )
         </div>
         
         <div id="Center">
-            <div id="Connexion">
+            <?php
+            if(!isset($_SESSION['mail']))
+            {
+                echo('<div id="Connexion">
                 <form method="POST" action="?Page=connexion">
                     <input name="login" type="text" maxlength="40">
                     <input name="password" type="password" maxlength="20">
                     <input name="bouton" type="submit" value="Connexion">
                 </form>
-            </div>
-
+            </div>');
+            }
+            else
+            {
+                echo("On est connecté !!!!! ");
+            }
+            ?>
             <div id="Statistique">
                 Impact eco
             </div>
