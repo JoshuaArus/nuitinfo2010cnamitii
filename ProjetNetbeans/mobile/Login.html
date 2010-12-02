@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>UniTrack 2.0</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Nom du site - Nuit de l'info</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div data-role="fieldcontain">
+    		<label for="mail">Adresse mail:</label>
+    		<input type="text" name="mail" id="mail" value=""  />
+    		<label for="mdp">Mot de passe:</label>
+    		<input type="password" name="mdp" id="mdp" value="" />	
+			<input type="button" id="envoi" data-role="button" value="Connexion" />
+		</div>
+		<div id="resultLog"></div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a onclick="/*deconnexion()*/">Deconnexion</a>
+	</div><!-- /header -->
+	
+</div><!-- /page -->
+<script type="text/javascript">
+        $(function() {
+ 
+            $("#envoi").click(function() {
+                var mail = $.trim($("#mail").val());
+				var mdp = $.trim($("#mdp").val());
+ 
+                if(mail.length > 0)
+                {
+                    $.ajax({
+                      type: "POST",
+                      url: "ajax.php",
+                      data: "mail="+mail+"&mdp="+mdp,
+                      cache: false,
+                      dataType: "text",
+                      success: onSuccess
+                    });
+                }
+            });
+ 
+			  $("#resultLog").ajaxError(function(event, request, settings, exception) {
+              $("#resultLog").html("Error Calling: " + settings.url + "<br />HTPP Code: " + request.status);
+            });
+ 
+            function onSuccess(data)
+            {
+				if( data == "true"){
+					window.location = "Accueil.html";
+				}
+            }
+ 
+        });
+    </script>
+
+</body>
+</html>
