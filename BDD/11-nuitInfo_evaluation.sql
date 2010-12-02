@@ -21,9 +21,9 @@
 
 CREATE TABLE IF NOT EXISTS `nuitInfo_evaluation` (
   `n_evaluation` bigint(20) NOT NULL,
-  `note` int(11) NOT NULL,
+  `note` int(11) NULL,
   `n_asso_trajetUtilisateur` bigint(20) NOT NULL,
-  `ponctualite` int(11) NOT NULL,
+  `ponctualite` int(11) NULL,
   PRIMARY KEY (`n_evaluation`)
 ) ENGINE=InnoDB CHARSET=utf8;
 
