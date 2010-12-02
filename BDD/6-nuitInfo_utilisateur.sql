@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `nuitInfo_utilisateur` (
   `n_utilisateur` bigint(20) NOT NULL,
   `nom` varchar(40) NOT NULL,
   `prenom` varchar(40) NOT NULL,
+  `sexe` varchar(10) NULL,
   `mail` varchar(60) NOT NULL,
   `tel` varchar(15) NULL,
   `n_categorieVoiture` bigint(20) NOT NULL,
