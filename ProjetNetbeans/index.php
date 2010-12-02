@@ -1,5 +1,6 @@
 <?php
 
+define('INC',"racine");
 require_once("Commun.php");
 
 ?>
