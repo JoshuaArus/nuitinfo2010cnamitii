@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Ajout d'itinéraire</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+</head> 
+<body>
+
+ <div data-role="page" id="ajoutitineraire">
+	
+	<div data-role="header"> 
+		<h1>Ajout d'itinéraire</h1> 
+	</div> 
+	
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+				<h3>Informations trajet</h3>
+				<!-- Départ -->
+				<label for="name">Départ :</label>
+				<input type="text" name="txtdepart" id="txtdepart" value=""  />
+				
+				<!-- Arrivée -->
+				<label for="name">Arrivée :</label>
+				<input type="text" name="txtdepart" id="txtdepart" value=""  />
+				
+				<!-- Via -->
+				<label for="name">Via :</label>
+				<input type="text" name="txtvia" id="txtvia" value=""  />
+			</fieldset>
+		</div>
+
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+				<h3>Voiture</h3>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					<legend>Catégorie de voiture :</legend>
+							<!--Citadine-->
+							<input type="radio" name="radio-choice-1" id="radio-choice-citadine" value="choice-1" checked="checked" />
+							<label for="radio-choice-citadine">Citadine</label>
+							<!--Citadine-->
+							<input type="radio" name="radio-choice-1" id="radio-choice-monospace" value="choice-2"  />
+							<label for="radio-choice-monospace">Monospace</label>
+							<!--SUV-->
+							<input type="radio" name="radio-choice-1" id="radio-choice-suv" value="choice-3"  />
+							<label for="radio-choice-suv">SUV</label>
+							<!--Berline-->
+							<input type="radio" name="radio-choice-1" id="radio-choice-berline" value="choice-4"  />
+							<label for="radio-choice-berline">Berline</label>
+					</fieldset>
+				
+
+				<!-- Nombre de places -->
+				<label for="name">Nombre de places :</label>
+				<input type="text" name="txtnbplace" id="txtnbplace" value=""  />
+			
+				<!-- Fumeur -->
+				<label for="checkbox-fumeur">Fumeur</label>
+				<input type="checkbox" name="checkbox-fumeur" id="checkbox-fumeur" class="custom" />
+		
+				<!-- Animaux -->
+				<label for="checkbox-animal">Présence d'animaux</label>
+				<input type="checkbox" name="checkbox-animal" id="checkbox-animal" class="custom" />
+				</div>
+		
+			</fieldset>
+		</div>
+
+		<div data-role="footer"> 
+			<h4>Footer content</h4> 
+		</div>
+ </div>
+ 
+ 
+ <h2>Info Trajet</h2>
+		<p>
+			Départ :  </br>
+			Arrivée : </br>
+			Via (optionnel) : </br>
+			Heure de départ : </br>
+		</p>
+		
+	<div>
+		<h2>Info Voiture</h2>
+		<p>
+			Fumeur :</br>
+			Animaux :</br>
+			Catégorie voiture : </br>
+			Nombre de places : </br>
+		</p>
+	</div>
+	
+
+</body>
+</html>
