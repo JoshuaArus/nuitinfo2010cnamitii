@@ -1,3 +1,5 @@
 <?php
-include "templates/design.php";
-?> plop
+
+require_once("Commun.php");
+
+?> 
