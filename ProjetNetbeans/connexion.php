@@ -1,5 +1,6 @@
 <?php ;
 
+define('INC',1);
 require_once('Commun.php');
 require_once('Fonctions/checker.php');
 

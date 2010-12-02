@@ -80,3 +80,28 @@
 [02-Dec-2010 23:07:21] PHP Notice:  A session had already been started - ignoring session_start() in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\checker.php on line 40
 [02-Dec-2010 23:09:56] PHP Notice:  Constant INC already defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\deconnexion.php on line 3
 [02-Dec-2010 23:09:56] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:45:14] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:46:19] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:46:22] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:46:23] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:47:21] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:49:48] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:48] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:48] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:48] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:48] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:49:50] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:50] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:50] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:50] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:50] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:49:54] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:54] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 21
+[02-Dec-2010 23:49:54] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:54] PHP Notice:  Undefined variable: CFG in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\detruireSession.php on line 22
+[02-Dec-2010 23:49:54] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:50:58] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:51:33] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:51:35] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:51:54] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[02-Dec-2010 23:52:00] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
