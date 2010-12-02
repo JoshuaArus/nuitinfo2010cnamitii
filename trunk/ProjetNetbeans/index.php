@@ -1,7 +1,13 @@
 <?php
 
 define('INC',"1");
-//require_once("Commun.php");
+require_once("Fonctions/mobile_device_detect.php");
+require_once("Commun.php");
+
+if ( mobile_device_detect() )
+{
+    redirection("mobile");
+}
 
 ?>
 
@@ -13,7 +19,7 @@ define('INC',"1");
         <script  type="text/javascript" src="javascript/principal.js"></script>
         <title>Unitrack 2.0</title>
     </head>
-    <body">
+    <body>
         <div id="Top">
             <div id="Banniere">
 
