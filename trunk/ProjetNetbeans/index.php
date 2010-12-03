@@ -89,13 +89,14 @@ if ( mobile_device_detect() )
 			echo '<form method="POST" action="connexion.php" id="login-form">
 				<fieldset>
 					<span class="text">
-						<input type="text" value="login" onFocus="if(this.value==\'Username\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Username\'}">
+						<input name="login" type="text" value="" onFocus="if(this.value==\'Username\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Username\'}">
 					</span>
 					<span class="text">
-						<input type="password" value="password" onFocus="if(this.value==\'Password\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Password\'}">
+						<input name="password" type="password" value="" onFocus="if(this.value==\'Password\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Password\'}">
 					</span>
 					<a href="#" class="login" onClick="document.getElementById(\'login-form\').submit()"><span><span>Connexion</span></span></a>
-					<span class="links"><a href="#">Mot de passe oublié ?</a><br/><a href="#">S\'enregistrer</a></span>
+					<span class="links"><a href="?Page=Oublie">Mot de passe oublié ?</a><br/><a href="?Page=Enregistrer">S\'enregistrer</a></span>
+					
 				</fieldset>
 			</form>';
             }
