@@ -59,6 +59,16 @@ if ( mobile_device_detect() )
 <!-- header -->
 	<header>
 		<div class="container">
+		<div id="deco">
+		<?php
+		if(isset($_SESSION['mail']))
+		{
+			
+				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a></span>';
+                                                                
+		}
+		?>
+		</div>
 			<div class="header-box">
 				<div class="left">
 					<div class="right">
@@ -69,12 +79,12 @@ if ( mobile_device_detect() )
 								<li><a href="?Page=Passager">Passager</a></li>
 								<li><a href="?Page=Trajets">Mes trajets</a></li>
 								<li><a href="?Page=Urgent">Trajet urgent</a></li>
-                                                                <?php
-                                                                if(isset($_SESSION['mail']))
-                                                                {
-                                                                    echo '<li><a href="deconnexion">Deco</a></li>';
-                                                                }
-                                                                ?>
+								<?php
+								if(isset($_SESSION['mail']))
+								{
+									echo '<li><a href="deconnexion.php">X</a></li>';
+								}
+								?>
 							</ul>
 						</nav>
 						<h1><a href="?Page=Accueil">
