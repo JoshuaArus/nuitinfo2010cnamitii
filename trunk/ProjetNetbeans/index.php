@@ -63,7 +63,7 @@ if ( mobile_device_detect() )
 		<?php
 		if(isset($_SESSION['mail']))
 		{
-				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a><br/><a href="?Page=Profil">Profil</a></span>';
+				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a> | <a href="?Page=Profil">Profil</a><br/></span>';
                                                                 
 		}
 		?>
@@ -168,6 +168,7 @@ if ( mobile_device_detect() )
 		<div class="inside">
 			<a href="http://www.itii-alsace.fr/" class="new_window"> designed by In Team ITII</a><br>
                         <a href="?Page=Legal">Légal</a><br>
+                        <a href="mobile">Version mobile</a><br>
 		</div>
 	</div>
 </aside>
