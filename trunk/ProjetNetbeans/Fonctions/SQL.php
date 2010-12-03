@@ -23,7 +23,7 @@ function connect()
 function req($req, $conn)
 {
 	$r=mysql_query($req,$conn);
-
+        
 	if(!$r)
 	{
 		close($conn);
@@ -101,28 +101,28 @@ function majProfil($T,$table,$conn)
 
 }
 
-function recherche($depart,$arrivee,$datedepart,$datearrive)
+function recherche($depart,$arrivee)//,$datedepart,$datearrive)
 {
     $conn = connect();
-    $req = 'select t.prix, t.nbPlaceDisponible, t.dateDepart, t.dateArrivee from nuitinfo_trajet t, nuitinfo_statuttrajet s
-    where t.n_statutTrajet=s.n_statutTrajet and s.statutTrajet=1 and t.villeDepart = \''.$depart.'\' and t.villeArrivee = \''.$arrivee.'\' and t.dateDepart = \''.$dateDepart.'\' and t.dateArrivee = \''.$dateArrivee.'\' order by t.dateDepart';
+    $req = 'select t.prix, t.nbPlaceDisponible, t.dateDepart, u.prenom, u.mail from nuitinfo_trajet t, nuitinfo_statuttrajet s, nuitinfo_utilisateur u, nuitinfo_asso_trajetutilisateur a
+    where u.n_utilisateur=a.n_utilisateur and a.n_trajet=t.n_trajet and t.n_statutTrajet=s.n_statutTrajet and s.statutTrajet=0 and t.villeDepart = \''.$depart.'\' and t.villeArrivee = \''.$arrivee.'\' order by t.villeDepart';//.$arrivee.'\' and t.dateDepart = \''.$dateDepart.'\' and t.dateArrivee = \''.$dateArrivee.'\' order by t.dateDepart';
     $rep = req($req,$conn);
 
-    return reponse($rep);
+    return $rep;
 }
 
 function annulerTrajet($id)
 {
     $conn = connect();
     $req = 'update nuitinfo_statuttrajet set statuttrajet=0 , etat="Annule" where n_statutTrajet='.$id;
-    return reponse(req($req));
+    return reponse(req($req,$conn));
 }
 
 function nbTrajetRealise()
 {
     $conn = connect();
     $req='select count(*) from nuitinfo_trajet t, nuitinfo_statutrajet s where s.etat="Realise" and s.n_statutTrajet=t.n_statutTrajet';
-    return reponse(req($req));
+    return reponse(req($req,$conn));
 }
 
 /*function co2eco()
@@ -135,7 +135,7 @@ function nbTrajetRealise()
 function nbTrajetUtilPassager($mail)
 {
     $conn = connect();
-    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail));
+    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail),$conn);
     $req='select count(*) from nuitinfo_trajet t, nuitinfo_statutrajet s, n_asso_trajetUtilisateur u where s.etat="Realise" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.type_utilisateur=0 and u.n_utilisateur = '.$util[0];
     return reponse(req($req));
 }
@@ -143,15 +143,25 @@ function nbTrajetUtilPassager($mail)
 function nbTrajetUtilConducteur($mail)
 {
     $conn = connect();
-    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail));
+    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail),$conn);
     $req='select count(*) from nuitinfo_trajet t, nuitinfo_statutrajet s, n_asso_trajetUtilisateur u where s.etat="Realise" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.type_utilisateur=1 and u.n_utilisateur = '.$util[0];
     return reponse(req($req));
+}
+
+function getTrajet($mail)
+{
+    $conn = connect();
+    echo"plop";
+    $util = mysql_fetch_assoc(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail,$conn));
+    echo($util);
+    $req='select * from nuitinfo_trajet t, nuitinfo_statutrajet s, n_asso_trajetUtilisateur u where s.etat="En cours" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.type_utilisateur=1 and u.n_utilisateur = '.$util[0].' order by t.dateDepart';
+    return req($req);
 }
 
 function getProchainTrajet($mail)
 {
     $conn = connect();
-    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail));
+    $util = reponse(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail),$conn);
     $req='select top(1) from nuitinfo_trajet t, nuitinfo_statutrajet s, n_asso_trajetUtilisateur u where s.etat="En cours" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.type_utilisateur=1 and u.n_utilisateur = '.$util[0];
     return reponse(req($req));
 }
