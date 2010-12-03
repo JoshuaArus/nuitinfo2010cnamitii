@@ -225,3 +225,21 @@
 [03-Dec-2010 02:59:34] PHP   2. redirection() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:13
 [03-Dec-2010 02:59:34] PHP   3. close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\redirection.php:12
 [03-Dec-2010 02:59:34] PHP   4. mysql_close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php:42
+[03-Dec-2010 03:00:07] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 03:00:07] PHP Stack trace:
+[03-Dec-2010 03:00:07] PHP   1. {main}() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:0
+[03-Dec-2010 03:00:07] PHP   2. redirection() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:13
+[03-Dec-2010 03:00:07] PHP   3. close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\redirection.php:12
+[03-Dec-2010 03:00:07] PHP   4. mysql_close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php:42
+[03-Dec-2010 03:01:10] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 03:01:10] PHP Stack trace:
+[03-Dec-2010 03:01:10] PHP   1. {main}() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:0
+[03-Dec-2010 03:01:10] PHP   2. redirection() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:13
+[03-Dec-2010 03:01:10] PHP   3. close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\redirection.php:12
+[03-Dec-2010 03:01:10] PHP   4. mysql_close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php:42
+[03-Dec-2010 03:02:00] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 03:02:00] PHP Stack trace:
+[03-Dec-2010 03:02:00] PHP   1. {main}() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:0
+[03-Dec-2010 03:02:00] PHP   2. redirection() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:13
+[03-Dec-2010 03:02:00] PHP   3. close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\redirection.php:12
+[03-Dec-2010 03:02:00] PHP   4. mysql_close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php:42
