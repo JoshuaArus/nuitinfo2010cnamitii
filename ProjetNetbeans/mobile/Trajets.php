@@ -11,14 +11,14 @@
 
  <div data-role="page" id="trajets">
 	<div data-role="header"> 
-		<h1>Mes trajets</h1> 
+		<h1>EcoTrack 2.0</h1> 
 	</div> 
 	<div data-role="fieldcontain">
 	  <div class="tableau">
-			<div class="ville">Ville départ</div>
-			<div class="date">Date départ</div>
-			<div class="ville">Ville arrivée</div>
-			<div class="date">Date arrivée</div>
+			<div class="ville">Ville d&eacute;part</div>
+			<div class="date">Date d&eacute;part</div>
+			<div class="ville">Ville arriv&eacute;e</div>
+			<div class="date">Date arriv&eacute;e</div>
 			<div class="prix">Prix</div>
 			<div class="statut">Statut trajet</div><br/>
 		
