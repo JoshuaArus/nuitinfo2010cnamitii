@@ -81,40 +81,40 @@
 				<div id="tabl_recherche">
 					<div id="critere1">
 						<img src="images/conducteur.png"/>
-						<br/><span class="profil">Christian</span>
-						<br/><span class="contacter">contacter</span>
-						<br/><span class="contacter">le conducteur</span>
+						<br/><span class="profil">'.$ligne['nom'].'</span>
+						<br/><a href="mailto:'.$ligne['mail'].'"><span class="contacter">contacter</span>
+                                                <br/><span class="contacter">le conducteur</span></a>
 					</div>
 					<div class="separation"></div>
 					<div id="critere2">
 						<div>
 							<span class="trajet">Départ</span>
-							<br/><span class="text-rech">Strasbourg</span>
+							<br/><span class="text-rech">'.$_POST['villeDepart'].'</span>
 						</div>
 						<br/>
 						<div>
 							<br/><span class="trajet">Arrivée</span>
-							<br/><span class="text-rech">Colmar</span>
+							<br/><span class="text-rech">'.$_POST['villeArrivee'].'</span>
 						</div>
 					</div>
 					<div class="separation"></div>
 					<div id="critere3">
 						<div>
 							<span class="trajet">Date et heure</span>
-							<br/><span class="text-rech">Samedi 15 décembre 2010</span>
+							<br/><span class="text-rech">'.$ligne['dateDepart'].'</span>
 							<br/><span class="text-rech">8h30</span>
 						</div>
 						<br/>
 						<div>
 							<span class="trajet">Prix</span>
-							<br/><span class="text-rech">8€</span>
+							<br/><span class="text-rech">'.$ligne['prix'].'</span>
 						</div>
 					</div>
 					<div class="separation"></div>
 					<div id="critere4">
 						<div>
 							<span class="trajet">Places</span>
-							<br/><span class="text-rech">2 place(s)</span>
+							<br/><span class="text-rech">'.$ligne['nbPlaceDisponible'].' place(s)</span>
 						</div>
 						<br/>
 						<div>
