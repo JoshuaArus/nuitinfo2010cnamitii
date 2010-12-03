@@ -74,14 +74,14 @@ if ( mobile_device_detect() )
 						<nav>
 							<ul>
 								<li><a href="?Page=Accueil">Accueil</a></li>
-								<li><a href="?Page=Conducteur">Je conduis</a></li>
-								<li><a href="?Page=Passager">Passager</a></li>
-								<li><a href="?Page=Trajets">Mes trajets</a></li>
-								<li><a href="?Page=Urgent">Trajet urgent</a></li>
 								<?php
 								if(isset($_SESSION['mail']))
 								{
-									echo '<li><a href="deconnexion.php">X</a></li>';
+									echo '
+								<li><a href="?Page=Conducteur">Je conduis</a></li>
+								<li><a href="?Page=Passager">Passager</a></li>
+								<li><a href="?Page=Trajets">Mes trajets</a></li>
+								<li><a href="?Page=Urgent">Trajet urgent</a></li>';
 								}
 								?>
 							</ul>
