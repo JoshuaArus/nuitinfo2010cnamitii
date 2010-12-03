@@ -1,7 +1,7 @@
 <?php
 
-echo '<h2 id="">Conducteur</h2><p><p/>';
-<div>
+echo '<h2 id="">Conducteur</h2><p><p/><p>
 Non implementé
-</div>
+</p>';
+
 ?>
