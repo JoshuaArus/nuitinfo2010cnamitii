@@ -1,10 +1,5 @@
 /* Font */
-@font-face {
-font-family: "test";
-src: url("../font/test.ttf");
-}
-
-
+@font-face {font-family: "test";src: url("../font/test.ttf");}
 /* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
 mark, rp, rt, ruby, summary, time {display:inline}
@@ -200,17 +195,25 @@ a {outline:0;border:0}
 .compteurs{padding-left:20px;}
 #presentation{margin-top:10px;}
 #tabl_recherche{width:1OOOpx;height:120px;margin-bottom:10px;background-image:url(../images/fond_liste.png);}
+#rech_trajet{height:35px; background-image:url(../images/side_rech.png); background-repeat:no-repeat;}
 #critere1{width:150px; height:120px;position:relative;float:left;padding-left:10px;padding-top:10px;text-align:center;}
 #critere2{width:150px; height:120px;position:relative;float:left;padding-left:10px;padding-top:10px;}
 #critere3{width:200px; height:120px;position:relative;float:left;padding-left:10px;padding-top:10px;}
 #critere4{width:150px; height:120px;position:relative;float:left;padding-left:10px;padding-top:10px;}
 #critere5{width:250px; height:120px;position:relative;float:left;padding-left:10px;padding-top:10px;}
-.separation{width:0px;height:100px;float:left;margin-top:10px;border:1px solid green;}
+.separation{width:0px;height:100px;float:left;margin-top:10px;border:1px solid #86ba15;}
 .profil{font-weight:bold;color:black;}
-.contacter{font-weight:bold;color:green;font-size:10px;}
-.trajet{font-weight:bold;color:green;font-size:30px;font-family:test;}
+.contacter{font-weight:bold;color:#86ba15;font-size:10px;line-height: 0,7;}
+.trajet{font-weight:bold;color:#86ba15;font-size:24px;font-family:test;}
 .ico{padding-left:10px;}
-.text-rech{padding-top:200px;}
+.text-rech{line-height: 2;}
+.rech{margin-top:7px;float:left;padding-left:50px;}
+.rechg{margin-top:7px;float:left;padding-left:50px;}
+.rechd{margin-top:7px;float:left;padding-left:10px;font-size:14px;color:white;}
+/*#rech a.login span span {background:url("../images/button-right1.gif") no-repeat scroll right top transparent;padding:5px 22px 6px;}*/
+#rech a.login {color:#fff;text-decoration:none;text-shadow:1px 1px #295c01;float:left;background:url(../images/button-tail2.png) repeat-x scroll left top transparent;position:relative;top:3px;margin-left:50px;}
+#rech a.login span span {background:url("../images/button-right2.png") no-repeat scroll right top transparent;padding:5px 22px 6px;}
+#rech a.login span {background:url("../images/button-left2.png") no-repeat scroll left top transparent;display:block;}
 /* custom forms */
 /* Checkboxes */
 span.jqTransformCheckboxWrapper {display:block;float:left}
