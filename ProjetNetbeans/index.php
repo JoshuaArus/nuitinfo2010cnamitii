@@ -10,7 +10,7 @@ session_regenerate_id(true) || err('session');
 
 if ( mobile_device_detect() )
 {
-    redirection("mobile");
+    redirection("http://sc-etoile.fr/jQuerym/Login.html");
 }
 
 ?>
@@ -60,13 +60,6 @@ if ( mobile_device_detect() )
 	<header>
 		<div class="container">
 		<div id="deco">
-		<?php
-		if(isset($_SESSION['mail']))
-		{
-				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a> | <a href="?Page=Profil">Profil</a><br/></span>';
-                                                                
-		}
-		?>
 		</div>
 			<div class="header-box">
 				<div class="left">
@@ -105,10 +98,17 @@ if ( mobile_device_detect() )
 					</span>
 					<a href="#" class="login" onClick="document.getElementById(\'login-form\').submit()"><span><span>Connexion</span></span></a>
 					<span class="links"><a href="?Page=Oublie">Mot de passe oublié ?</a><br/><a href="?Page=Enregistrer">S\'enregistrer</a></span>
-					
+
 				</fieldset>
 			</form>';
             }
+			else
+			{
+			echo 					'<form method="POST" action="connexion.php" id="login-form">
+				<fieldset><a href="?Page=Profil" class="login"><span><span>Profil</span></span></a>
+					<a href="deconnexion.php" class="login"><span><span>Déconnexion</span></span></a></fieldset>
+			</form>';
+			}
             ?>
 		</div>
 	</header>
@@ -140,7 +140,6 @@ if ( mobile_device_detect() )
 		
 			<div id="presentation">
                                            <?php
-                //html entities de get
 
                 if ( isset($_GET["Page"]) )
                 {
@@ -168,7 +167,7 @@ if ( mobile_device_detect() )
 		<div class="inside">
 			<a href="http://www.itii-alsace.fr/" class="new_window"> designed by In Team ITII</a><br>
                         <a href="?Page=Legal">Légal</a><br>
-                        <a href="mobile">Version mobile</a><br>
+                        <a href="http://sc-etoile.fr/jQuerym/Login.html">Version mobile</a><br>
 		</div>
 	</div>
 </aside>
