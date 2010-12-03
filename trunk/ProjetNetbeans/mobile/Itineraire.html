@@ -107,25 +107,30 @@
 	$(function() {
 
 		$("#Valider").click(function() {
-			//var villeDepart = $.trim($("#txtdepartville").val());
-			//var villeArrivee = $.trim($("#txtarriveeville").val());
-			
-		//	var nbPlaceDisponible = 2;// $.trim($("#radio-choice").checked);	
+			var villeDepart = $.trim($("#txtdepartville").val());
+			var villeArrivee = $.trim($("#txtarriveeville").val());
+				
 		//	var dateArrive = $.trim($("#txtarriveeville").val());
 		//	var dateDepart = $.trim($("#txtarriveeville").val());
 		
-			var chaine = "villeDepart=Paris&villeArrivee=Strasbourg&nbPlaceDisponible=2&prix=10&n_statutTrajet=enPlanification&dateArrive=10102010&dateDepart=11112010&n_statutTrajet=enCours";
+		for(i=0;i<5;i++){		
+			if( document.getElementsByName('radio-choice')[i].checked){
+				var nbPlaceDisponible = document.getElementsByName('radio-choice')[i].value;
+			}
+		}
+		
+			var chaine = "villeDepart="+villeDepart+"&villeArrivee="+villeArrivee+"&nbPlaceDisponible="+nbPlaceDisponible+"&prix=10&n_statutTrajet=enPlanification&dateArrive=10-10-2010&dateDepart=11-11-2010&n_statutTrajet=enCours";
 
 		   // if(villeDepart != "" && villeArrivee !="")
 		   // {
-				$.ajax({
-				  type: "POST",
-				  url: "ajaxEnvoiTrajet.php",
-				  data: chaine,
-				  cache: false,
-				  dataType: "text",
-				  success: onSuccess
-				});
+					$.ajax({
+                      type: "POST",
+                      url: "ajaxEnvoiTrajet.php",
+                      data: chaine,
+                      cache: false,
+                      dataType: "text",
+                      success: onSuccess
+                    });
 		   // }
 		});
 
