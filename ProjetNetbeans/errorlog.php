@@ -265,3 +265,29 @@
 [03-Dec-2010 04:52:11] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
 [03-Dec-2010 04:52:11] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 29
 [03-Dec-2010 04:52:11] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:17:36] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:21:23] PHP Notice:  Undefined offset: 0 in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 157
+[03-Dec-2010 05:21:23] PHP Warning:  Missing argument 2 for req(), called in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 158 and defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 23
+[03-Dec-2010 05:21:23] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:21:23] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:21:23] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 29
+[03-Dec-2010 05:21:23] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:21:55] PHP Warning:  Missing argument 2 for req(), called in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 157 and defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 23
+[03-Dec-2010 05:21:55] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:21:55] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:21:55] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 29
+[03-Dec-2010 05:21:55] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:22:10] PHP Warning:  Missing argument 2 for req(), called in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 157 and defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 23
+[03-Dec-2010 05:22:10] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:22:10] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:22:10] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 29
+[03-Dec-2010 05:22:10] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:22:23] PHP Warning:  Missing argument 2 for req(), called in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 156 and defined in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 23
+[03-Dec-2010 05:22:23] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:22:23] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 25
+[03-Dec-2010 05:22:23] PHP Notice:  Undefined variable: conn in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 29
+[03-Dec-2010 05:22:23] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 05:22:35] PHP Notice:  Undefined index: prenom in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 17
+[03-Dec-2010 05:22:35] PHP Notice:  Undefined index: mail in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 18
+[03-Dec-2010 05:22:35] PHP Notice:  Undefined index: prenom in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 17
+[03-Dec-2010 05:22:35] PHP Notice:  Undefined index: mail in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 18
