@@ -6,11 +6,12 @@ if(isset($_SESSION['mail']))
     {
         $list = getTrajet($_SESSION['mail']);
         $perso = mysql_fetch_array(req('select prenom from nuitinfo_utilisateur where mail=\''.$_SESSION['mail'].'\'',connect()));
+        echo '<h2 id="">Recherche co-voiturage</h2>';
         while($ligne = mysql_fetch_assoc($list))
         {
             echo('
             <div id="presentation">
-				<h2 id="">Recherche co-voiturage</h2>
+				
 				<div id="tabl_recherche">
 					<div id="critere1">
 						<img src="images/conducteur.png"/>
