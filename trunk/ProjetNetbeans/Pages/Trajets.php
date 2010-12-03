@@ -4,9 +4,8 @@ echo '<h2 id="">Trajet</h2>';
 
 if(isset($_SESSION['mail']))
     {
-        echo($_SESSION['mail']);
         $list = getTrajet($_SESSION['mail']);
-
+        $perso = mysql_fetch_array(req('select prenom from nuitinfo_utilisateur where mail=\''.$_SESSION['mail'].'\'',connect()));
         while($ligne = mysql_fetch_assoc($list))
         {
             echo('
@@ -15,8 +14,8 @@ if(isset($_SESSION['mail']))
 				<div id="tabl_recherche">
 					<div id="critere1">
 						<img src="images/conducteur.png"/>
-						<br/><span class="profil">'.$ligne['prenom'].'</span>
-						<br/><a href="mailto:'.$ligne['mail'].'"><span class="contacter">contacter</span>
+						<br/><span class="profil">'.$perso['prenom'].'</span>
+						<br/><a href="mailto:'.$_SESSION['mail'].'"><span class="contacter">contacter</span>
                                                 <br/><span class="contacter">le conducteur</span></a>
 					</div>
 					<div class="separation"></div>

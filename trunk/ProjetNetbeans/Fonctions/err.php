@@ -26,7 +26,7 @@ function err($nom_erreur, $t=array()) {
 	$w .= ' (décalé : ' . (defined('DIR') ? 'oui ['.DIR.']' : 'non') . ')';
 
 	// On détruit la session et on affiche le message d'erreur (deux façons)
-	detruireSession();
+	//detruireSession();
 	if($CFG['debug']) {
 		exit($CFG['en_tete_erreurs'] . $w);
 

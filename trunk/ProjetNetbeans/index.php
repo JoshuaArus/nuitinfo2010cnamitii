@@ -167,7 +167,7 @@ if ( mobile_device_detect() )
 	<div class="container">
 		<div class="inside">
 			<a href="http://www.itii-alsace.fr/" class="new_window"> designed by In Team ITII</a><br>
-                        <a href="?Page=Légal">Légal</a><br>
+                        <a href="?Page=Legal">Légal</a><br>
 		</div>
 	</div>
 </aside>

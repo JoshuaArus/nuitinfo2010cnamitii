@@ -151,11 +151,9 @@ function nbTrajetUtilConducteur($mail)
 function getTrajet($mail)
 {
     $conn = connect();
-    echo"plop";
-    $util = mysql_fetch_assoc(req('select n_utilisateur from nuitinfo_utilisateur where mail='.$mail,$conn));
-    echo($util);
-    $req='select * from nuitinfo_trajet t, nuitinfo_statutrajet s, n_asso_trajetUtilisateur u where s.etat="En cours" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.type_utilisateur=1 and u.n_utilisateur = '.$util[0].' order by t.dateDepart';
-    return req($req);
+    $util = mysql_fetch_assoc(req('select n_utilisateur from nuitinfo_utilisateur where mail=\''.$mail.'\'',$conn));
+    $req='select * from nuitinfo_trajet t, nuitinfo_statutTrajet s, nuitinfo_asso_trajetutilisateur u where s.etat="En cours" and s.n_statutTrajet=t.n_statutTrajet and u.n_trajet = t.n_trajet and u.n_utilisateur = '.$util['n_utilisateur'].' order by t.dateDepart';
+    return req($req,$conn);
 }
 
 function getProchainTrajet($mail)
