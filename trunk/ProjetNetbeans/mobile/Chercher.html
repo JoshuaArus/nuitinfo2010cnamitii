@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>UniTrack 2.0</title> 
+	<title>Je cherche</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
@@ -17,9 +17,9 @@
 				nextText: 'Suiv>', nextStatus: 'Voir le mois suivant',
 				currentText: 'Courant', currentStatus: 'Voir le mois courant',
 				monthNames: ['Janvier','F&eacute;vrier','Mars','Avril','Mai','Juin',
-				'Juillet','Août','Septembre','Octobre','Novembre','D&eacute;cembre'],
+				'Juillet','Ao&ugrave;t','Septembre','Octobre','Novembre','D&eacute;cembre'],
 				monthNamesShort: ['Jan','F&eacute;v','Mar','Avr','Mai','Jun',
-				'Jul','Aoû','Sep','Oct','Nov','D&eacute;c'],
+				'Jul','Ao&ugrave;t','Sep','Oct','Nov','D&eacute;c'],
 				monthStatus: 'Voir un autre mois', yearStatus: 'Voir un autre ann&eacute;e',
 				weekHeader: 'Sm', weekStatus: '',
 				dayNames: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
@@ -35,14 +35,14 @@
 			onSelect: function(dateText, inst){
 				$('#ddepart').val(dateText)
 			}
-		})
+		});
 		.datepicker( "option", "firstDay", 1 );
 		var dtparrivee = $("#dtparrivee")
 		.datepicker({
 			onSelect: function(dateText, inst){
 				$('#darrivee').val(dateText)
 			}
-		})
+		});
 		.datepicker( "option", "firstDay", 1 );
 	});
   	</script>
@@ -52,7 +52,7 @@
 <div data-role="page">
 
 	<div data-role="header">
-		<h1>UniTrack 2.0</h1>
+		<h1>EcoTrack 2.0</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
