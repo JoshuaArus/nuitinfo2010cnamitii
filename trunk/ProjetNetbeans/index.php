@@ -63,8 +63,7 @@ if ( mobile_device_detect() )
 		<?php
 		if(isset($_SESSION['mail']))
 		{
-			
-				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a></span>';
+				echo '<span class="login"><a href="deconnexion.php">Deconnexion</a><br/><a href="?Page=Profil">Profil</a></span>';
                                                                 
 		}
 		?>
