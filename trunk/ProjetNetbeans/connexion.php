@@ -31,7 +31,7 @@ else
 		creerCookie('cookie_pseudo', $T['mail']);
 		$T['sessid'] = nouveauTicket();
 		creerCookie('cookie_sessid', $T['sessid']);
-		redirection('index.php?Page=ok');
+		redirection('index.php?Page=Accueil');
 	}
 }
 
