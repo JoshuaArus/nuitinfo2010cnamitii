@@ -73,7 +73,7 @@ if ( mobile_device_detect() )
 					<div class="right">
 						<nav>
 							<ul>
-								<li class="current"><a href="?Page=Accueil">Accueil</a></li>
+								<li><a href="?Page=Accueil">Accueil</a></li>
 								<li><a href="?Page=Conducteur">Je conduis</a></li>
 								<li><a href="?Page=Passager">Passager</a></li>
 								<li><a href="?Page=Trajets">Mes trajets</a></li>
