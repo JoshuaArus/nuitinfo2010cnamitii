@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: 127.0.0.1
--- Généré le : Ven 03 Décembre 2010 à 01:06
+-- Généré le : Ven 03 Décembre 2010 à 01:07
 -- Version du serveur: 5.1.49
 -- Version de PHP: 5.3.3
 
@@ -25,7 +25,6 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Structure de la table `nuitinfo_adresses`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_adresses`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_adresses` (
   `n_adresse` bigint(20) NOT NULL,
   `numero` int(11) DEFAULT NULL,
@@ -46,7 +45,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_adresses` (
 -- Structure de la table `nuitinfo_asso_trajetutilisateur`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_asso_trajetutilisateur`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_asso_trajetutilisateur` (
   `n_asso_trajetUtilisateur` bigint(20) NOT NULL,
   `n_utilisateur` bigint(20) NOT NULL,
@@ -68,7 +66,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_asso_trajetutilisateur` (
 -- Structure de la table `nuitinfo_date`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_date`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_date` (
   `n_date` bigint(20) NOT NULL,
   `dateDepart` datetime NOT NULL,
@@ -87,7 +84,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_date` (
 -- Structure de la table `nuitinfo_demande`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_demande`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_demande` (
   `n_typeDemande` bigint(20) NOT NULL,
   `typeDemande` tinyint(1) NOT NULL,
@@ -109,7 +105,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_demande` (
 -- Structure de la table `nuitinfo_evaluation`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_evaluation`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_evaluation` (
   `n_evaluation` bigint(20) NOT NULL,
   `note` int(11) DEFAULT NULL,
@@ -130,7 +125,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_evaluation` (
 -- Structure de la table `nuitinfo_preferencesutilisateurs`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_preferencesutilisateurs`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_preferencesutilisateurs` (
   `n_preference` bigint(20) NOT NULL,
   `typePreference` varchar(50) NOT NULL,
@@ -150,7 +144,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_preferencesutilisateurs` (
 -- Structure de la table `nuitinfo_statuttrajet`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_statuttrajet`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_statuttrajet` (
   `n_statutTrajet` bigint(20) NOT NULL,
   `statutTrajet` tinyint(1) NOT NULL,
@@ -169,7 +162,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_statuttrajet` (
 -- Structure de la table `nuitinfo_trajet`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_trajet`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_trajet` (
   `n_trajet` bigint(20) NOT NULL,
   `prix` int(5) DEFAULT NULL,
@@ -199,7 +191,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_trajet` (
 -- Structure de la table `nuitinfo_typevoiture`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_typevoiture`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_typevoiture` (
   `n_categorieVoiture` bigint(20) NOT NULL,
   `nomCategorie` varchar(50) NOT NULL,
@@ -219,7 +210,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_typevoiture` (
 -- Structure de la table `nuitinfo_universite`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_universite`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_universite` (
   `n_universite` bigint(20) NOT NULL,
   `nom` varchar(100) NOT NULL,
@@ -238,7 +228,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_universite` (
 -- Structure de la table `nuitinfo_utilisateur`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_utilisateur`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_utilisateur` (
   `n_utilisateur` bigint(20) NOT NULL,
   `nom` varchar(40) NOT NULL,
@@ -265,7 +254,6 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_utilisateur` (
 -- Structure de la table `nuitinfo_ville`
 --
 
-DROP TABLE IF EXISTS `nuitinfo_ville`;
 CREATE TABLE IF NOT EXISTS `nuitinfo_ville` (
   `n_ville` bigint(20) NOT NULL,
   `nomVille` varchar(40) NOT NULL,
