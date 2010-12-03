@@ -43,9 +43,7 @@
 						<!--Code postal-->
 						<label for="txtarriveecp">Code postal :</label>
 						<input type="text" name="txtarriveecp" id="txtarriveecp" value=""  />
-					
-					<h3>c) Via :</h3>
-					<input type="text" name="txtvia" id="txtvia" value=""  />	
+
 			  <br/>
 			  <br/>
 			  <h2>2) Voiture</h2>
@@ -68,19 +66,19 @@
 					
 						<h3>b) Nombre de places :</h3>
 								<!--1 place-->
-								<input type="radio" name="radio-choice-2" id="radio-choice-1" value="choice-1" checked="checked" />
+								<input type="radio" name="radio-choice" id="radio-choice-1" value="1" checked="checked" />
 								<label for="radio-choice-1">1</label>
 								<!--2 places-->
-								<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2"  />
+								<input type="radio" name="radio-choice" id="radio-choice-2" value="2"  />
 								<label for="radio-choice-2">2</label>
 								<!--3 places-->
-								<input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3"  />
+								<input type="radio" name="radio-choice" id="radio-choice-3" value="3"  />
 								<label for="radio-choice-3">3</label>
 								<!--4 places-->
-								<input type="radio" name="radio-choice-2" id="radio-choice-4" value="choice-4"  />
+								<input type="radio" name="radio-choice" id="radio-choice-4" value="4"  />
 								<label for="radio-choice-4">4</label>
 								<!--5 places-->
-								<input type="radio" name="radio-choice-2" id="radio-choice-5" value="choice-4"  />
+								<input type="radio" name="radio-choice" id="radio-choice-5" value="5"  />
 								<label for="radio-choice-5">5</label>
 								
 						<h3>c) Autre :</h3>
@@ -93,7 +91,7 @@
 								<input type="checkbox" name="checkbox-animal" id="checkbox-animal" class="custom" />
 						<br/>
 						<br/>
-						<input type="button" value="Valider" data-inline="true" data-theme="e" />
+						<input id="Valider" type="button" value="Valider" data-role="button" data-inline="true" data-theme="e" />
 		</fieldset>
 	  </form>
 		
@@ -104,46 +102,53 @@
 	</div>
  </div>
 <script type="text/javascript">
-	function deconnexion(){    
-		alert();
-		window.location = "../Login.html";				
-	}
-</script>
 
-<script type="text/javascript">
-        $(function() {
- 
-            $("#Valider").click(function() {
-                var txtdepartville = $.trim($("#txtdepartville").val());
-				var txtarriveeville = $.trim($("#txtarriveeville").val());
- 
-                if(txtdepartville.length > 0)
-                {
-                    $.ajax({
-                      type: "POST",
-                      url: "ajaxEnvoiTrajet.php",
-                      data: "txtdepartville="+txtdepartville+"&txtarriveeville="+txtarriveeville,
-                      cache: false,
-                      dataType: "text",
-                      success: onSuccess
-                    });
-                }
-            });
- 
-			  $("#resultLog").ajaxError(function(event, request, settings, exception) {
-              $("#resultLog").html("Error Calling: " + settings.url + "<br />HTPP Code: " + request.status);
-            });
- 
-            function onSuccess(data)
-            {    
-				if( data == "true"){
-					$("#error").html("Envoi Ok");
-				} else {
-					$("#error").html("Echec envoi");
-				}
-            }
- 
-        });
+
+	$(function() {
+
+		$("#Valider").click(function() {
+			//var villeDepart = $.trim($("#txtdepartville").val());
+			//var villeArrivee = $.trim($("#txtarriveeville").val());
+			
+		//	var nbPlaceDisponible = 2;// $.trim($("#radio-choice").checked);	
+		//	var dateArrive = $.trim($("#txtarriveeville").val());
+		//	var dateDepart = $.trim($("#txtarriveeville").val());
+		
+			var chaine = "villeDepart=Paris&villeArrivee=Strasbourg&nbPlaceDisponible=2&prix=10&n_statutTrajet=enPlanification&dateArrive=10102010&dateDepart=11112010&n_statutTrajet=enCours";
+
+		   // if(villeDepart != "" && villeArrivee !="")
+		   // {
+				$.ajax({
+				  type: "POST",
+				  url: "ajaxEnvoiTrajet.php",
+				  data: chaine,
+				  cache: false,
+				  dataType: "text",
+				  success: onSuccess
+				});
+		   // }
+		});
+
+		  $("#resultLog").ajaxError(function(event, request, settings, exception) {
+		  $("#resultLog").html("Error Calling: " + settings.url + "<br />HTPP Code: " + request.status);
+		});
+
+		function onSuccess(data)
+		{    
+			if( data == "true"){
+				alert("Envoi Ok");
+			} 
+			else {
+				alert("Envoi error "+data);
+				$("#error").html("Echec envoi : "+data);
+			}
+		}
+		
+		function deconnexion(){    
+			window.location = "../Login.html";				
+		}
+
+	});
     </script>
 
 </body>
