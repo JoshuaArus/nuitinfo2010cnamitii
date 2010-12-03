@@ -55,7 +55,7 @@ if(isset($_POST['villeDepart']) && isset($_POST['villeArrivee']))
 					</div>
 					<div class="separation"></div>
 					<div id="critere5">
-						<div>
+                                            <div>
 							<span class="trajet">Préférences</span>
 							<br/><br/> <span class="ico"><img src="images/cig-ok.png"/></span>
 									   <span class="ico"><img src="images/anim-ok.png"/></span>
@@ -71,12 +71,22 @@ else
 {
     echo ('
 
-    <form method="POST" action="?Page=Passager">
-    <span>Ville depart </span><input type="text", name="villeDepart" value=""/><br/>
-    <span>Ville Arrivee </span><input type="text", name="villeArrivee" value=""/><br/>
-    <input type="submit" value="Rechercher"/>
-    </form>
-
+    <h2 id="">Recherche co-voiturage</h2>
+				<div id="rech_trajet">
+                                        <form method="POST" action="?Page=Passager" id="passa">
+					<div class="rechg"><input name="villeDepart" type="text"/></div>
+					<div class="rechd">Départ</div>
+					<div class="rechg"><input name="villeArrivee" type="text"/></div>
+					<div class="rechd">Arrivée</div>
+					<div id="rech">
+					<a href="#" class="login" onClick="document.getElementById(\'passa\').submit()">
+						<span>
+						<span>Rechercher</span>
+						</span>
+					</a>
+					</div>
+                                        </form>
+				</div>
     ');
 }
 

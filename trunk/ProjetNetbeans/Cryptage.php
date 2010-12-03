@@ -1,7 +1,7 @@
 <?php
 define("INC",1);
 include("Commun.php");
-$pass = "plop";
+$pass = "test";
 crypterMdp($pass);
 echo("<div>".$pass."</div>");
 
