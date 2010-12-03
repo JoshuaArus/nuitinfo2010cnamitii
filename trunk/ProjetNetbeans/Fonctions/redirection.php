@@ -9,7 +9,7 @@
 
 function redirection($lien) {
 global $conn;
-close($conn);
+if (isset($conn)) close($conn);
 	header('Location: ' . $lien);
 	exit('Redirection en cours');
 }
