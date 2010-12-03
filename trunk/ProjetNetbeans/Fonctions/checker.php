@@ -52,7 +52,7 @@
 	}
 
 	$conn = connect();
-	$T = lireProfil($_SESSION['mail'], 'nuitInfo_utilisateur', $conn);
+	$T = lireProfil($_SESSION['mail'], 'nuitinfo_utilisateur', $conn);
 	$C = count($T)!==0;
 
 
