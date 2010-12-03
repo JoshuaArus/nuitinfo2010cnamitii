@@ -7,7 +7,6 @@
 -- Version du serveur: 5.1.49
 -- Version de PHP: 5.3.3
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_asso_trajetutilisateur` (
   PRIMARY KEY (`n_asso_trajetUtilisateur`),
   KEY `n_utilisateur` (`n_utilisateur`),
   KEY `n_trajet` (`n_trajet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_asso_trajetutilisateur`
@@ -54,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_demande` (
   PRIMARY KEY (`n_typeDemande`),
   KEY `n_trajet` (`n_trajet`),
   KEY `n_utilisateur` (`n_utilisateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_demande`
@@ -69,12 +68,12 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_demande` (
 
 CREATE TABLE IF NOT EXISTS `nuitinfo_evaluation` (
   `n_evaluation` bigint(20) NOT NULL,
-  `note` int(11) DEFAULT NULL,
+  `note` int(11)  NULL,
   `n_asso_trajetUtilisateur` bigint(20) NOT NULL,
-  `ponctualite` int(11) DEFAULT NULL,
+  `ponctualite` int(11)  NULL,
   PRIMARY KEY (`n_evaluation`),
   KEY `n_asso_trajetUtilisateur` (`n_asso_trajetUtilisateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_evaluation`
@@ -93,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_preferencesutilisateurs` (
   `n_utilisateur` bigint(20) NOT NULL,
   PRIMARY KEY (`n_preference`),
   KEY `n_utilisateur` (`n_utilisateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_preferencesutilisateurs`
@@ -111,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_statuttrajet` (
   `statutTrajet` tinyint(1) NOT NULL,
   `etat` varchar(30) NOT NULL,
   PRIMARY KEY (`n_statutTrajet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_statuttrajet`
@@ -126,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_statuttrajet` (
 
 CREATE TABLE IF NOT EXISTS `nuitinfo_trajet` (
   `n_trajet` bigint(20) NOT NULL,
-  `prix` int(5) DEFAULT NULL,
+  `prix` int(5)  NULL,
   `villeDepart` varchar(50) NOT NULL,
   `villeArrivee` varchar(50) NOT NULL,
   `nbPlaceDisponible` int(11) NOT NULL,
@@ -135,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_trajet` (
   `n_statutTrajet` bigint(20) NOT NULL,
   PRIMARY KEY (`n_trajet`),
   KEY `n_statutTrajet` (`n_statutTrajet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_trajet`
@@ -154,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_typevoiture` (
   `carbone` int(10) NOT NULL,
   `nbPlace` tinyint(1) NOT NULL,
   PRIMARY KEY (`n_categorieVoiture`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_typevoiture`
@@ -171,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_universite` (
   `n_universite` bigint(20) NOT NULL,
   `nom` varchar(100) NOT NULL,
   `n_adresse` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_universite`
@@ -188,15 +187,15 @@ CREATE TABLE IF NOT EXISTS `nuitinfo_utilisateur` (
   `n_utilisateur` bigint(20) NOT NULL,
   `nom` varchar(40) NOT NULL,
   `prenom` varchar(40) NOT NULL,
-  `sexe` varchar(10) DEFAULT NULL,
+  `sexe` varchar(10)  NULL,
   `mail` varchar(60) NOT NULL,
-  `tel` varchar(15) DEFAULT NULL,
+  `tel` varchar(15)  NULL,
   `n_categorieVoiture` bigint(20) NOT NULL,
   `n_adresse` bigint(20) NOT NULL,
   `mdp` varchar(50) NOT NULL,
   PRIMARY KEY (`n_utilisateur`),
   KEY `n_categorieVoiture` (`n_categorieVoiture`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  CHARSET=utf8;
 
 --
 -- Contenu de la table `nuitinfo_utilisateur`
