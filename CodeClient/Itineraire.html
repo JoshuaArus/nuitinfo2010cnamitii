@@ -17,6 +17,7 @@
 	<div data-role="fieldcontain">
 		<fieldset data-role="controlgroup">
 			   <h2>1) Trajet</h2>
+			   <form method="POST" action="recherche.php">
 						<h3>a) Départ :</h3>
 						<!--numéro-->
 						<label for="txtdepartnum">Numéro :</label>
@@ -26,7 +27,7 @@
 						<input type="text" name="txtdepartrue" id="txtdepartrue" value=""  />
 						<!--ville-->
 						<label for="txtdepartville">Ville :</label>
-						<input type="text" name="txtdepartville" id="txtdepartville" value=""  />
+						<input type="text" name="txtdepartville" id="txtdepartville" value="strasbourg"  />
 						<!--Code postal-->
 						<label for="txtdepartcp">Cope postal :</label>
 						<input type="text" name="txtdepartcp" id="txtdepartcp" value=""  />
@@ -40,7 +41,7 @@
 						<input type="text" name="txtarriveerue" id="txtarriveerue" value=""  />
 						<!--ville-->
 						<label for="txtarriveeville">Ville :</label>
-						<input type="text" name="txtarriveeville" id="txtarriveeville" value=""  />
+						<input type="text" name="txtarriveeville" id="txtarriveeville" value="colmar"  />
 						<!--Code postal-->
 						<label for="txtarriveecp">Cope postal :</label>
 						<input type="text" name="txtarriveecp" id="txtarriveecp" value=""  />
@@ -92,6 +93,8 @@
 								<!-- Animaux -->
 								<label for="checkbox-animal">Présence d'animaux</label>
 								<input type="checkbox" name="checkbox-animal" id="checkbox-animal" class="custom" />
+								<input type="submit" value="Rechercher" />
+								</form>
 		</fieldset>
 		<div data-role="footer"> 
 			<h4>Footer content</h4> 
