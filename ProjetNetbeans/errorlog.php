@@ -303,4 +303,9 @@
 [03-Dec-2010 05:22:35] PHP Notice:  Undefined index: mail in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 18
 [03-Dec-2010 05:22:35] PHP Notice:  Undefined index: prenom in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 17
 [03-Dec-2010 05:22:35] PHP Notice:  Undefined index: mail in C:\Users\joshua.ENTELA-PROD\Desktop\NuitInfo2010\ProjetNetbeans\Pages\Trajets.php on line 18
->>>>>>> .r108
+>>>>>>> .r108[03-Dec-2010 06:11:38] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php on line 42
+[03-Dec-2010 06:11:38] PHP Stack trace:
+[03-Dec-2010 06:11:38] PHP   1. {main}() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:0
+[03-Dec-2010 06:11:38] PHP   2. redirection() D:\SVN\nuitInfo\ProjetNetbeans\deconnexion.php:13
+[03-Dec-2010 06:11:38] PHP   3. close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\redirection.php:12
+[03-Dec-2010 06:11:38] PHP   4. mysql_close() D:\SVN\nuitInfo\ProjetNetbeans\Fonctions\SQL.php:42

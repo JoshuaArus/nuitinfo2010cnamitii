@@ -89,7 +89,7 @@ if ( mobile_device_detect() )
             if(!isset($_SESSION['mail']))
             {
 			echo '<form method="POST" action="connexion.php" id="login-form">
-				<fieldset>
+				<fieldset> demo: test@test.com   mdp: test 
 					<span class="text">
 						<input name="login" type="text" value="" onFocus="if(this.value==\'Username\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Username\'}">
 					</span>
@@ -97,7 +97,7 @@ if ( mobile_device_detect() )
 						<input name="password" type="password" value="" onFocus="if(this.value==\'Password\'){this.value=\'\'}" onBlur="if(this.value==\'\'){this.value=\'Password\'}">
 					</span>
 					<a href="#" class="login" onClick="document.getElementById(\'login-form\').submit()"><span><span>Connexion</span></span></a>
-					<span class="links"><a href="?Page=Oublie">Mot de passe oublié ?</a><br/><a href="?Page=Enregistrer">S\'enregistrer</a></span>
+					<!-- <span class="links"><a href="?Page=Oublie">Mot de passe oublié ?</a><br/><a href="?Page=Enregistrer">S\'enregistrer</a></span> -->
 
 				</fieldset>
 			</form>';
